@@ -53,6 +53,9 @@ class Text {
 		this.data = this.data.replace("</p>", "");
 		this.data = "<h1>" + this.data + "</h1>";
 	}
+	public void makeLink(String text, String url){
+		this.data = this.data.replace(text, "<a href=\""+ url+"\">"+text+"</a>");
+	}
 
 	public String compile() {
 		String style = "style = \""; 
