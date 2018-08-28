@@ -2,9 +2,9 @@ import java.util.*;
 
 import java.lang.reflect.*;
 
-class Text extends Item {
-	public Text(String text) {
-		this.data = "<p style =\"\">" + text + "<p>";
+class Heading extends Item {
+	public Heading(String text, int headingLevel) {
+		this.data = "<h"+headingLevel+" style =\"\">" + text + "</h"+headingLevel+">";
 	}
 
 	public void makeLink(String text, String url) {
